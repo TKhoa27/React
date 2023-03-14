@@ -1,12 +1,21 @@
 import React from 'react'
-
+import { Container } from 'react-bootstrap'
+import Header from './component/Header'
+import Footer from './component/Footer'
+import HomeScreen from './screen/HomeScreen'
 
 function App() {
   return (
     <>
-      <h1>WWlcome c</h1>
+      <Header />
+      <main className='py-3'>
+        <Container>
+          <HomeScreen />
+        </Container>
+      </main>
+      <Footer />
     </>
-  );
+  )
 }
 
-export default App;
+export default App
